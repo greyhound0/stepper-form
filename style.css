@@ -1,5 +1,82 @@
-.firstStep{
+*{
+
+    box-sizing: border-box;
+    margin: auto;
+}
+
+
+body{
+    background: linear-gradient(90deg, rgba(113,241,153,1) 0%, rgba(67,189,235,1) 38%, rgba(151,182,246,1) 84%);
+    margin-top: 30vh;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.firstStep,
+.secondStep,
+.thirdStep {
+    position: absolute;
+    margin-left: 40vw;
+    background-color: white;
+    height: 40vh;
+    width: 18vw;
+    padding: 10px;
+    padding-top: 20px;
+    border-color: black;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+   
+}
+
+div.inactive {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 50%);
+}
+div.active {
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(-50%, -50%);
+}
+
+.firstStep > .textInput {
+    background-color: white;
+}
+
+#email,
+#password,
+#confirmPassword,
+#firstName,
+#lastName,
+#phone,
+#address,
+#facebook,
+#twitter,
+#instagram{
+    height: 40px;
+    width: 230px;
+    border-radius: 4px;
+    background-color: white;
+    padding: 5px;
+}
+
+.next,
+.previous,
+.submit {
+    background-color: #008F7A;
+    padding: 2px;
+    border-radius: 5px;
+    width: 5vw;
+    
+}
+
+.toggle{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
 }

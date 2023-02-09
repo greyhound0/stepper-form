@@ -5,20 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stepper-form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <div class="firstStep">
-        <div class="email">
+        Create Your Account
+        <div class="textInput">
             <input type="text" placeholder="email" id="email">
         </div>
-        <div class="password">
-            <input type="text" placeholder="password" id="password">
+        <div class="textInput">
+            <input type="password" placeholder="password" id="password">
         </div>
-        <div class="confirmPassword">
-            <input type="text" placeholder="confirm password" id="confirmPassword">
+        <div class="textInput">
+            <input type="password" placeholder="confirm password" id="confirmPassword">
         </div>
-            <button id="next">Next</button>
+        <button class="next">Next</button>
     </div>
+    <div class="secondStep inactive">
+        Personal Details
+        <div class="textInput">
+            <input type="text" placeholder="first name" id="firstName">
+        </div>
+        <div class="textInput">
+            <input type="text" placeholder="last name" id="lastName">
+        </div>
+        <div class="textInput">
+            <input type="text" placeholder="phone" id="phone">
+        </div>
+        <div class="texInput">
+            <input type="text" placeholder="address" id="address">
+        </div>
+        <div class="toggle">
+        <button class="next">Next</button>
+        <button class="previous">Previous</button>
+    </div>
+</div>
+
+<div class="thirdStep inactive">
+    Social Profiles
+    <div class="textInput">
+        <input type="text" placeholder="facebook" id="facebook">
+    </div>
+    <div class="textInput">
+        <input type="text" placeholder="twitter" id="twitter">
+    </div>
+    <div class="textInput">
+        <input type="text" placeholder="instagram" id="instagram">
+    </div>
+    <div class="toggle">
+    <button class="next">Previous</button>
+    <button class="previous">Submit</button>
+</div>
+</div>
+<script src="app.js"></script>
     
 </body>
 </html>
