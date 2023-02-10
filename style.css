@@ -71,7 +71,7 @@ div.active {
 .next1,
 .previous1,
 .submit {
-    background-color: #008F7A;
+    background-color: rgba(67,189,235,1);
     padding: 2px;
     border-radius: 5px;
     width: 5vw;
@@ -83,7 +83,7 @@ div.active {
 .previous:active,
 .previous1:active,
 .submit:active {
-    color: #008F7A;
+    color: rgba(67,189,235,1);
     background-color: black;
     
     
