@@ -20,8 +20,8 @@ body{
     position: absolute;
     margin-left: 40vw;
     background-color: white;
-    height: 40vh;
-    width: 18vw;
+    height: 45vh;
+    width: 20vw;
     padding: 10px;
     padding-top: 20px;
     border-color: black;
@@ -95,6 +95,16 @@ div.active {
 }
 
 #error{
+    color: rgba(252, 49, 8, 0.921);
+    font-size: large;
+    display: none;
+}
+#error1{
+    color: rgba(252, 49, 8, 0.921);
+    font-size: large;
+    display: none;
+}
+#error2{
     color: rgba(252, 49, 8, 0.921);
     font-size: large;
     display: none;
