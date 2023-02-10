@@ -60,6 +60,10 @@ function personalDetails(){
     secondStep.item(item=>item).classList.remove('active');
     thirdStep.item(item=>item).classList.add('active');
     }
+    else {
+        error.innerText = 'fields cannot be empty';
+        error.style.display = 'block';
+    }
 }
 
 next1.addEventListener('click', personalDetails);
