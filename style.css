@@ -109,3 +109,15 @@ div.active {
     font-size: large;
     display: none;
 }
+
+#table{
+    background-color: rgba(151,182,246,1) ;
+    height: 35vh;
+    width: 22vw;
+    font-size: large;
+    display: none;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
