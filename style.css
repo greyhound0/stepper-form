@@ -36,12 +36,13 @@ body{
 div.inactive {
     opacity: 0;
     pointer-events: none;
-    transform: translate(-50%, 50%);
+    
 }
 div.active {
     opacity: 1;
     pointer-events: all;
-    transform: translate(-50%, -50%);
+    transition: ease-in-out 1s;
+    
 }
 
 .firstStep > .textInput {
@@ -67,6 +68,8 @@ div.active {
 
 .next,
 .previous,
+.next1,
+.previous1,
 .submit {
     background-color: #008F7A;
     padding: 2px;
@@ -75,8 +78,24 @@ div.active {
     
 }
 
-.toggle{
+.next:active,
+.next1:active,
+.previous:active,
+.previous1:active,
+.submit:active {
+    color: #008F7A;
+    background-color: black;
+    
+    
+}
+.toggleButtons{
     width: 75%;
     display: flex;
     justify-content: space-between;
+}
+
+#error{
+    color: rgba(252, 49, 8, 0.921);
+    font-size: large;
+    display: none;
 }
