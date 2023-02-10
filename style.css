@@ -1,5 +1,6 @@
 *{
-
+    
+    
     box-sizing: border-box;
     margin: auto;
 }
@@ -11,16 +12,19 @@ body{
     width: 100%;
     height: 100%;
     position: relative;
+    transition: background 0.5s ease;
 
 }
 
 .firstStep,
 .secondStep,
 .thirdStep {
-    position: relative;
-    margin-left: 40vw;
+    
+    position: absolute;
     background-color: white;
-    height: 45vh;
+    margin-top: 20vh;
+    margin-left: 100vh ;
+    height: 50vh;
     width: 20vw;
     padding: 10px;
     padding-top: 20px;
@@ -30,18 +34,22 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    transition: all 0.5s ease;
+    transform: translate(-50%,-50% );
    
 }
 
 div.inactive {
     opacity: 0;
     pointer-events: none;
+    transform: translate(-50%, -50%);
     
 }
 div.active {
     opacity: 1;
     pointer-events: all;
     transition: ease-in-out 1s;
+    transform: translate(-50%, -50%);
     
 }
 
@@ -85,6 +93,7 @@ div.active {
 .submit:active {
     color: rgba(67,189,235,1);
     background-color: black;
+    
     
     
 }
