@@ -91,7 +91,7 @@ submit.addEventListener('click', ()=>{
         error2.style.display = 'block';
     }
 })
-window.addEventListener('load', localStorage.clear)
+// window.addEventListener('load', localStorage.clear)
 
 function generateDataTable(){
     thirdStep.item(item=>item).classList.add('inactive');
