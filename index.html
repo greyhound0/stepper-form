@@ -20,7 +20,8 @@
         <div class="textInput">
             <input type="password" placeholder="confirm password" id="confirmPassword">
         </div>
-        <button class="next">Next</button>
+        
+        <button class="next">Next</button><span id="error">enter a valid email</span>
     </div>
     <div class="secondStep inactive">
         Personal Details
@@ -31,14 +32,14 @@
             <input type="text" placeholder="last name" id="lastName">
         </div>
         <div class="textInput">
-            <input type="text" placeholder="phone" id="phone">
+            <input type="number" placeholder="phone" id="phone">
         </div>
         <div class="texInput">
             <input type="text" placeholder="address" id="address">
         </div>
-        <div class="toggle">
-        <button class="next">Next</button>
-        <button class="previous">Previous</button>
+        <div class="toggleButtons">
+            <button class="previous">Previous</button>
+        <button class="next1">Next</button>
     </div>
 </div>
 
@@ -50,14 +51,20 @@
     <div class="textInput">
         <input type="text" placeholder="twitter" id="twitter">
     </div>
-    <div class="textInput">
+    <!-- <div class="textInput">
         <input type="text" placeholder="instagram" id="instagram">
-    </div>
+    </div> -->
     <div class="toggle">
-    <button class="next">Previous</button>
-    <button class="previous">Submit</button>
+    <button class="previous1">Previous</button>
+    <button class="submit">Submit</button>
 </div>
 </div>
+
+<table id="table">
+    <tr>
+        
+    </tr>
+</table>
 <script src="app.js"></script>
     
 </body>
