@@ -95,4 +95,6 @@ window.addEventListener('load', localStorage.clear)
 function generateDataTable(){
     thirdStep.item(item=>item).classList.add('inactive');
     thirdStep.item(item=>item).classList.remove('active');
+    firstStep.item(item=>item).classList.add('inactive');
+    secondStep.item(item=>item).classList.add('inactive');
 }
