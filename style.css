@@ -22,8 +22,8 @@ body{
     
     position: absolute;
     background-color: white;
-    margin-top: 20vh;
-    margin-left: 100vh ;
+    top: 50%;
+    left: 50%;
     height: 50vh;
     width: 20vw;
     padding: 10px;
@@ -67,8 +67,8 @@ div.active {
 #facebook,
 #twitter,
 #instagram{
-    height: 40px;
-    width: 230px;
+    height: 7vh;
+    width: 15vw;
     border-radius: 4px;
     background-color: white;
     padding: 5px;
