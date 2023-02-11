@@ -25,7 +25,7 @@ function validateEmail(){
     const valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if(!valid.test(email.value)){
          error.style.display = "block";
-         
+         navigator.vibrate(500);
                  
        }
        else if(password.value === confirmPassword.value && valid.test(email.value))
@@ -41,6 +41,7 @@ function validateEmail(){
 
             error.innerText = 'password not same in both fields';
             error.style.display = 'block';
+            navigator.vibrate(500);
         }
     }
     
@@ -67,10 +68,12 @@ function personalDetails(){
     else if(phone.value.length != 10){
         error1.innerText = 'enter a valid phone no.';
         error1.style.display = 'block'
+        navigator.vibrate(500);
     }
     else {
         error1.innerText = 'fields cannot be empty';
         error1.style.display = 'block';
+        navigator.vibrate(500);
     }
 }
 
@@ -89,6 +92,7 @@ submit.addEventListener('click', ()=>{
     }
     else{
         error2.style.display = 'block';
+        navigator.vibrate(500);
     }
 })
 // window.addEventListener('load', localStorage.clear)
