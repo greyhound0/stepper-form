@@ -162,7 +162,7 @@ td{
 .next1,
 .previous1,
 .submit {
-    width: unset;
+    width: 20px;
     padding: 8px;
     border-radius: 5px;
     
