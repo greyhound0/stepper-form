@@ -24,7 +24,7 @@ body{
     background-color: white;
     top: 50%;
     left: 50%;
-    height: 50vh;
+    height: 70vh;
     width: 20vw;
     padding: 10px;
     padding-top: 20px;
@@ -106,17 +106,17 @@ div.active {
 #error{
     color: rgba(252, 49, 8, 0.921);
     font-size: large;
-    display: none;
+    visibility: hidden;
 }
 #error1{
     color: rgba(252, 49, 8, 0.921);
     font-size: large;
-    display: none;
+    visibility: hidden;
 }
 #error2{
     color: rgba(252, 49, 8, 0.921);
     font-size: large;
-    display: none;
+    visibility: hidden;
 }
 
 #table{
@@ -133,7 +133,7 @@ div.active {
 tr{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    
 }
 
 @media screen and (max-width:750px) {

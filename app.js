@@ -24,7 +24,7 @@ var table = document.getElementById('table');
 function validateEmail(){
     const valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if(!valid.test(email.value)){
-         error.style.display = "block";
+         error.style.visibility = "visible";
          navigator.vibrate(500);
                  
        }
@@ -34,13 +34,13 @@ function validateEmail(){
         localStorage.setItem('password', password.value);
             firstStep.item(item=>item).classList.add('inactive');
             secondStep.item(item=>item).classList.add('active');
-            error.style.display = 'none'
+            error.style.visibility = 'hidden'
 
         }
         else {
 
             error.innerText = 'password not same in both fields';
-            error.style.display = 'block';
+            error.style.visibility = 'visible';
             navigator.vibrate(500);
         }
     }
@@ -62,17 +62,17 @@ function personalDetails(){
     secondStep.item(item=>item).classList.add('inactive');
     secondStep.item(item=>item).classList.remove('active');
     thirdStep.item(item=>item).classList.add('active');
-    error1.style.display =  'none';
+    error1.style.visibility =  'hidden';
 
     }
     else if(phone.value.length != 10){
         error1.innerText = 'Enter a valid phone no.';
-        error1.style.display = 'block'
+        error1.style.visibility = 'visible'
         navigator.vibrate(500);
     }
     else {
         error1.innerText = 'Fields cannot be empty';
-        error1.style.display = 'block';
+        error1.style.visibility = 'visible';
         navigator.vibrate(500);
     }
 }
@@ -82,16 +82,16 @@ previous1.addEventListener('click', ()=> {
     thirdStep.item(item=>item).classList.add('inactive');
     thirdStep.item(item=>item).classList.remove('active');
     secondStep.item(item=>item).classList.add('active');
-    error1.style.display = 'none';
+    error1.style.visibility = 'hidden';
 })
 
 submit.addEventListener('click', ()=>{
     if(facebook.value.length >0 && twitter.value.length >0 ){
-        error2.style.display = 'none'
+        error2.style.visibility = 'hidden'
         generateDataTable();
     }
     else{
-        error2.style.display = 'block';
+        error2.style.visibility = 'visible';
         navigator.vibrate(500);
     }
 })
