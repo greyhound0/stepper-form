@@ -142,15 +142,21 @@ td{
 @media screen and (max-width:750px) {
     .firstStep,
     .secondStep,
-    .thirdStep,
-    #table{
+    .thirdStep{
         height: 70vh;
         width: 80vw;
         font-size: small;
-        align-items: center;
-        
-        
+        align-items: center;    
     }
+
+    #table{
+        height: 50vh;
+        width: 80vw;
+        font-size: small;
+        align-items: center;
+    }
+
+
     .next,
 .previous,
 .next1,
