@@ -33,6 +33,7 @@ function validateEmail(){
         localStorage.setItem('email', email.value);
         localStorage.setItem('password', password.value);
             firstStep.item(item=>item).classList.add('inactive');
+            firstStep.item(item=>item).classList.remove('active');
             secondStep.item(item=>item).classList.add('active');
             error.style.visibility = 'hidden'
 
