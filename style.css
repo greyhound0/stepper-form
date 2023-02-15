@@ -136,8 +136,9 @@ div.active {
     .secondStep,
     .thirdStep,
     #table{
-        height: 60vh;
+        height: 70vh;
         width: 60vw;
+        font-size: small;
         
         
     }

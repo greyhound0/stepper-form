@@ -28,7 +28,7 @@ function validateEmail(){
          navigator.vibrate(500);
                  
        }
-       else if(password.value === confirmPassword.value && valid.test(email.value))
+       else if(password.value === confirmPassword.value && valid.test(email.value) && password.value.length > 0)
        { 
         localStorage.setItem('email', email.value);
         localStorage.setItem('password', password.value);
@@ -54,7 +54,7 @@ previous.addEventListener('click', () => {
 } )
 
 function personalDetails(){
-    if(phone.value.length === 10 && firstName.value.length > 0) {
+    if(phone.value.length === 10 && firstName.value.length > 0 && lastName.value.length > 0 && address.value.length > 0) {
     localStorage.setItem('firstName', firstName.value);
     localStorage.setItem('lastName', lastName.value);
     localStorage.setItem('phone', phone.value);
@@ -66,12 +66,12 @@ function personalDetails(){
 
     }
     else if(phone.value.length != 10){
-        error1.innerText = 'enter a valid phone no.';
+        error1.innerText = 'Enter a valid phone no.';
         error1.style.display = 'block'
         navigator.vibrate(500);
     }
     else {
-        error1.innerText = 'fields cannot be empty';
+        error1.innerText = 'Fields cannot be empty';
         error1.style.display = 'block';
         navigator.vibrate(500);
     }
