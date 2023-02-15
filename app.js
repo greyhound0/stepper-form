@@ -107,43 +107,43 @@ function generateDataTable(){
     var row1 = table.insertRow(0);
     var cell1 = row1.insertCell(0);
     var cell2 = row1.insertCell(1);
-    cell1.innerHTML = "first name: &nbsp;";
+    cell1.innerHTML = "First name: &nbsp;";
     cell2.innerHTML = firstName.value;
 
     var row2 = table.insertRow(1);
     var cell3 = row2.insertCell(0);
     var cell4 = row2.insertCell(1);
-    cell3.innerHTML = "last name: &nbsp;";
+    cell3.innerHTML = "Last name: &nbsp;";
     cell4.innerHTML = lastName.value;
 
     var row3 = table.insertRow(2);
     var cell5 = row3.insertCell(0);
     var cell6 = row3.insertCell(1);
-    cell5.innerHTML = "email: &nbsp;";
+    cell5.innerHTML = "Email: &nbsp;";
     cell6.innerHTML = email.value;
 
     var row4 = table.insertRow(3);
     var cell7 = row4.insertCell(0);
     var cell8 = row4.insertCell(1);
-    cell7.innerHTML = "phone: &nbsp;";
+    cell7.innerHTML = "Phone: &nbsp;";
     cell8.innerHTML = phone.value;
 
     var row5 = table.insertRow(4);
     var cell9 = row5.insertCell(0);
     var cell10 = row5.insertCell(1);
-    cell9.innerHTML = "address: &nbsp;";
+    cell9.innerHTML = "Address: &nbsp;";
     cell10.innerHTML = address.value;
 
     var row6 = table.insertRow(5);
     var cell11 = row6.insertCell(0);
     var cell12 = row6.insertCell(1);
-    cell11.innerHTML = "facebook: &nbsp;";
+    cell11.innerHTML = "Facebook: &nbsp;";
     cell12.innerHTML = facebook.value;
 
     var row7 = table.insertRow(6);
     var cell13 = row7.insertCell(0);
     var cell14 = row7.insertCell(1);
-    cell13.innerHTML = "twitter: &nbsp;";
+    cell13.innerHTML = "Twitter: &nbsp;";
     cell14.innerHTML = twitter.value;
 
 }

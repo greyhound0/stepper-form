@@ -133,7 +133,10 @@ div.active {
 tr{
     display: flex;
     align-items: center;
-    
+    margin-left: 10px;
+}
+td{
+    margin-left: 10px;
 }
 
 @media screen and (max-width:750px) {
